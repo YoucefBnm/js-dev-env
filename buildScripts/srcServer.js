@@ -4,6 +4,7 @@ import open from "open" //to open our site in browser
 import webpack from 'webpack'
 import config from '../webpack.config.dev'
 
+/* eslint-disable no-console */
 const port = 8888
 const app = express()
 const compiler = webpack(config)
