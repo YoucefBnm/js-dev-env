@@ -11,7 +11,8 @@
     "open:src": "babel-node buildScripts/srcServer.js",
     "localtunnel": "lt --port 8888",
     "share": "npm-run-all --parallel open:src localtunnel",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.js\""
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.js\"",
+    "test:watch": "npm run test --watch"
   },
   "author": "Cory House",
   "license": "MIT",
