@@ -1,6 +1,6 @@
 import express from "express"
 import path from "path"
-import open from "open" //to open our site in browser
+// import open from "open" //to open our site in browser
 import webpack from 'webpack'
 import config from '../webpack.config.dev'
 

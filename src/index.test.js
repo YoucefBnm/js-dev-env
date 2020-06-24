@@ -1,4 +1,5 @@
-import { expect } from 'chai'
+// import { expect } from 'chai'
+const expect = require('chai').expect;
 
 describe('Our first test', () => {
     it('should pass', () => {

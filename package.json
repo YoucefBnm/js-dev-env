@@ -4,9 +4,10 @@
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel prestart open:src lint:watch",
+    "start:dev": "webpack-dev-server --mode development --open",
+    "start": "npm-run-all --parallel start:dev prestart lint:watch",
     "lint": "esw webpack.config.* src buildScripts --color",
-    "lint:watch": "esw webpack.config.*, src, buildScripts --color",
+    "lint:watch": "esw webpack.config.* src buildScripts --color",
     "open:src": "babel-node buildScripts/srcServer.js",
     "localtunnel": "lt --port 8888",
     "share": "npm-run-all --parallel open:src localtunnel",
@@ -48,7 +49,9 @@
     "style-loader": "^1.2.1",
     "surge": "^0.21.3",
     "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-md5-hash": "0.0.6"
   }

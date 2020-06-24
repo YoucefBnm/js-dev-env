@@ -7,7 +7,7 @@ export default {
     entry: [
         path.resolve(__dirname, 'src/index')
     ],
-    taget: 'web', 
+    target: 'web', 
     output: {
         path: path.resolve(__dirname, 'src'),
         publicPath: '/',
@@ -16,7 +16,7 @@ export default {
     plugins: [],
     module: {
         loaders: [
-            {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
+            {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
             {test: /\.css$/, loaders: ['style', 'css']}
         ]
     }

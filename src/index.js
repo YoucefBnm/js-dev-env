@@ -1,4 +1,7 @@
-const numeral = require('numeral');
-require('../index.css');
+// const numeral = require('numeral');
+// require('../index.css');
 
-const courseValue = numeral(1000).format('10.0.00');
+// import numeral from "numeral";
+// import "../index.css";
+
+// const courseValue = numeral(1000).format('10.0.00');
